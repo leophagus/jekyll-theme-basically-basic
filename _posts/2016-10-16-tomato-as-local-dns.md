@@ -13,7 +13,7 @@ My venerable WRT54GL with Tomato firmware, finally was about to bite the dust. I
 ## Tomato as Switch, DHCP and DNS server
 Lots of info on how to re-purpose an old wifi router as a switch. I found this [HowToGeek](http://www.howtogeek.com/174419/how-to-reuse-your-old-wi-fi-router-as-a-network-switch/) very useful. To task the switch with DHCP and DNS duties as well, only a few more steps are needed. The one gotcha that took me a while to figure out was to configure the DHCP server to send out the main router (my Archer C9) as the gateway in the DHCP offer packets. Tomato makes this painfully easy. No messing around with DNSMasq confs although its not too difficult either [DNSMasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq.conf.example).
 
-1. Basic->Network [ScreenShot]({{ site.url }}/images/BasicNetwork.png)
+1. Basic->Network [ScreenShot]({{ site.url }}/assets/images/BasicNetwork.png)
   * WAN/Internet Type : Disabled
   * Router IP Address : 192.68.0.2
   * Subnet Mask : 255.255.255.0
@@ -22,7 +22,7 @@ Lots of info on how to re-purpose an old wifi router as a switch. I found this [
   * DHCP Server: Checked
   * IP Address Range : 192.168.0.100 - 192.168.0.255
   * Wireless/ Enable Wireless : Not Checked
-2. Advanced->DHCP/DNS [ScreenShot]({{ site.url }}/images/AdvancedDhcp.png)
+2. Advanced->DHCP/DNS [ScreenShot]({{ site.url }}/assets/images/AdvancedDhcp.png)
   * Use internal DNS : Checked
   * Use received DNS with user-entered DNS : Checked
   * Use user-entered gateway if WAN is disabled : Checked
