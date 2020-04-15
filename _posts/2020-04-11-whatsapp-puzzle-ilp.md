@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WhatsApp Puzzle - Solution using ILP"
+title: "WhatsApp Lock Puzzle - Solution using ILP"
 date: 2020-04-11
 ---
 WhatsApp sent me this simple puzzle recently. Find the digits that will open the lock using the hints provided.
